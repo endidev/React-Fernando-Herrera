@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { GifGridItem } from './GifGridItem';
 import { useFetchGifs } from '../hooks/useFetchGifs'
 
@@ -9,7 +9,7 @@ export const GifGrid = ({ category }) => {
     
     return (
         <>
-            <h3 className='animate__animated animate__wobble'>{ category }</h3>
+            <h3 className='animate__animated animate__fadeIn'>{ category }</h3>
             { loading && <p className='animate__animated animate__flash'>Loading</p>}
             <div className='card-grid'>
                 {
