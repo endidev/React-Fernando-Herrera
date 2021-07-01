@@ -6,21 +6,22 @@ export const AddCategory = ({setCategories}) => {
     const [inputValue, setInputValue] = useState('')
 
     const handleInputChange = (e) => {
-        setInputValue( e.target.value )
+        setInputValue( e.target.value );
     }
-
-    const handdleSubmit = (e) => {
+    
+    const handleSubmit = (e) => {
         e.preventDefault();
+        console.log('Here handleSubmit', inputValue);
         
         if(inputValue.trim().length > 2){
             setCategories( cats => [inputValue, ...cats])
+            setInputValue('');
         }
-
     }
 
     return (
-        <form onSubmit={handdleSubmit}>
-        
+        <form onSubmit={handleSubmit}>
+            <p>{ inputValue }</p>
             <input 
                 type='text'
                 value= {inputValue}

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hook fetch Compararlo con snapshot 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    One Punch
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`hook fetch debe mostrar items al cargar  imagenes con useFetchGifs 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    One Punch
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="abc"
+      key="abc"
+      title="Cualquier cosa"
+      url="https://localhost/cualquier/cosa.jgp"
+    />
+  </div>
+</Fragment>
+`;
