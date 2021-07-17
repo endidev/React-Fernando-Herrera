@@ -10,7 +10,7 @@ export const useFetch = (url) => {
             isMounted.current = false;
         }
     }, [])
-
+    
     useEffect( () => {
         setState({ data: null, loading: true, error: null})
         fetch( url )
@@ -25,6 +25,6 @@ export const useFetch = (url) => {
                 } 
             })
     },[url]);
-
+    
     return state;
 }
